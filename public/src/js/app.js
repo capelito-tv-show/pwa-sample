@@ -4,3 +4,8 @@ if ("serviceWorker" in navigator) {
     console.log("serviceWorker registered!");
   });
 }
+
+window.addEventListener("beforeinstallprompt", function(event) {
+  console.log("beforeinstallprompt, fired");
+  event.preventDefault();
+});
