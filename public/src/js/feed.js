@@ -18,7 +18,7 @@ function openCreatePostModal() {
       }
     });
 
-    deferredPrompt;
+    deferredPrompt = null;
   }
 }
 
